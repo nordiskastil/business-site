@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nordisk Tech</title>
+  <!-- link to the CSS file -->
+  <link rel="stylesheet" href="./style.css" />
+  <!-- meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to Google fonts and Font awesome icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <!-- Top Navigation Menu -->
+    <div class="topnav" id="myTopnav">
+      <a title="Back to homepage" href="#home">
+        <img class="logo" src="assets/nt-logo.png" alt="logo nordisk tech">
+        <a href="#home" class="active">Home</a>
+        <a href="#webdesign">Webdesign</a>
+        <a href="#ecommerce">Ecommerce</a>
+        <a href="#seo">SEO</a>
+        <a href="#about-us">About us</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+  </header>
+
+  <div class="video-container">
+    <video autoplay loop muted id="video-bg">
+      <source src="assets/webdesign-video-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- overlay text video -->
+  <div class="video-overlay-text">
+    <h3>Premium Web Design Agency</h3>
+    <h1>Nordic Tech for Custom Websites, Branding & Digital Marketing</h1>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h2>Some examples of our previous work</h2>
+    <!-- Photo Grid -->
+    <div class="portfolio-items">
+      <img src="assets/hemsida-persasbacken.jpg" style="width:100%">
+      <img src="assets/hemsida-strandgarden.jpg" style="width:100%">
+      <img src="assets/Nordiska-stil-hemsida-Are-golfklubb.png" style="width:100%">
+      <img src="assets/Nordiska-stil-hemsida-sergel-talarkonst.png" style="width:100%">
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section class="form-container">
+    <div class="contact">
+      <img class="contact-image" src="assets/contact-us.jpeg" alt="contact-image">
+    </div>
+    <form action="https://httpbin.org/anything" method="post">
+      <h2>Contact us</h2>
+      <fieldset>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required placeholder="Jenny Rosen">
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required placeholder="jenny@mymail.com">
+        </label>
+
+        <label>
+          <span>Phone</span>
+          <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{7}" required placeholder="070-2333444">
+        </label>
+
+        <h3>I am interested in:</h3>
+
+        <label>
+          <input type="radio" id="webdesign" name="radio" />
+          Webdesign
+        </label>
+
+        <label>
+          <input type="radio" id="ecommerce" name="radio" />
+          Ecommerce
+        </label>
+
+        <label>
+          <input type="radio" id="seo" name="radio" />
+          SEO
+        </label>
+
+        <h3>leave us a message</h3>
+        <label>
+          <textarea name="message" rows="6" cols="0"></textarea>
+        </label>
+      </fieldset>
+      <button type="submit">Submit </button>
+    </form>
+
+  </section>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
