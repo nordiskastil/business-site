@@ -6,3 +6,4 @@ I first made a simple design on paper. Then I added the menu and made it respons
 
 ## View it live
 # technigo-project-business-site-main
+https://business-site-nordisk-tech.netlify.app/
